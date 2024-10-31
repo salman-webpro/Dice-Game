@@ -59,7 +59,7 @@ const actiOnHold = function () {
   document.getElementById(`score--${activePlayer}`).textContent = finalScores[
     activePlayer
   ] += currentScore;
-  if (finalScores[activePlayer] >= 30) {
+  if (finalScores[activePlayer] >= 50) {
     finishGame();
   } else {
     swithPlayer();
@@ -72,6 +72,7 @@ const finishGame = function () {
     .querySelector(`.player--${activePlayer}`)
     .classList.add('player--winner');
   document.querySelector(`#name--${activePlayer}`).textContent = 'Winner 🥳';
+  document.getElementById(`score--${activePlayer}`).style.color = 'white';
   btnDiceRoll.disabled = true;
   btnHold.disabled = true;
 };
