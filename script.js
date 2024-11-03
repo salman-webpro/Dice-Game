@@ -1,22 +1,4 @@
 'use strict';
-// prblems
-// - Dice Rolls and show a random dice.
-// - Assign the number on that dice to currentScore.
-// - Hold button will add the current score to the main score.
-// - IF Dice one appears the current score will be zero.
-// - Current player switch on hold and dice one.
-// - reset game.
-
-// Solution
-// - get the html elements store into variables.
-// - genarate random number between 1-6.
-// - if roll dice button is cliked show according dice image based on that number.
-// - add the number in currentScore.
-// - if hold button is clicked add the current score in main score.
-// - Switch the player to the second one.
-// - repeat the process for second player.
-// - if the dice is 1 then the currentScore is emtied and the focus switch to he next player.
-// - Whoever reach the score of 100 wins.
 
 const player_1 = document.querySelector('.player--0');
 const player_2 = document.querySelector('.player--1');
