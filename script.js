@@ -35,6 +35,7 @@ const actionOnDiceRoll = function () {
   CalcCurrentScore();
   document.getElementById(`current--${activePlayer}`).textContent =
     currentScore;
+  console.log(currentScore);
 };
 
 const actiOnHold = function () {
