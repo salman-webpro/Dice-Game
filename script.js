@@ -65,10 +65,4 @@ btnHold.addEventListener('click', actiOnHold);
 
 btnNewGame.addEventListener('click', function () {
   window.location.reload();
-
-  //   btnDiceRoll.addEventListener('click', actionOnDiceRoll);
-  // btnHold.addEventListener('click', actiOnHold);
-
-  // btnNewGame.addEventListener('click', function () {
-  //   window.location.reload();
 });
