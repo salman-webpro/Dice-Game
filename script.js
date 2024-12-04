@@ -66,3 +66,20 @@ btnHold.addEventListener('click', actiOnHold);
 btnNewGame.addEventListener('click', function () {
   window.location.reload();
 });
+
+const finishGame2 = function () {
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.add('player--winner');
+  document.querySelector(`#name--${activePlayer}`).textContent = 'Winner 🥳';
+  document.getElementById(`score--${activePlayer}`).style.color = 'white';
+  btnDiceRoll.disabled = true;
+  btnHold.disabled = true;
+};
+
+btnDiceRoll.addEventListener('click', actionOnDiceRoll);
+btnHold.addEventListener('click', actiOnHold);
+
+btnNewGame.addEventListener('click', function () {
+  window.location.reload();
+});
