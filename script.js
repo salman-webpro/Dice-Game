@@ -38,48 +38,48 @@ const actionOnDiceRoll = function () {
   console.log(currentScore);
 };
 
-// const actiOnHold = function () {
-//   document.getElementById(`score--${activePlayer}`).textContent = finalScores[
-//     activePlayer
-//   ] += currentScore;
-//   if (finalScores[activePlayer] >= 50) {
-//     finishGame();
-//   } else {
-//     swithPlayer();
-//   }
-//   dice.classList.add('hidden');
-// };
+const actiOnHold = function () {
+  document.getElementById(`score--${activePlayer}`).textContent = finalScores[
+    activePlayer
+  ] += currentScore;
+  if (finalScores[activePlayer] >= 50) {
+    finishGame();
+  } else {
+    swithPlayer();
+  }
+  dice.classList.add('hidden');
+};
 
-// const finishGame = function () {
-//   document
-//     .querySelector(`.player--${activePlayer}`)
-//     .classList.add('player--winner');
-//   document.querySelector(`#name--${activePlayer}`).textContent = 'Winner 🥳';
-//   document.getElementById(`score--${activePlayer}`).style.color = 'white';
-//   btnDiceRoll.disabled = true;
-//   btnHold.disabled = true;
-// };
+const finishGame = function () {
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.add('player--winner');
+  document.querySelector(`#name--${activePlayer}`).textContent = 'Winner 🥳';
+  document.getElementById(`score--${activePlayer}`).style.color = 'white';
+  btnDiceRoll.disabled = true;
+  btnHold.disabled = true;
+};
 
-// btnDiceRoll.addEventListener('click', actionOnDiceRoll);
-// btnHold.addEventListener('click', actiOnHold);
+btnDiceRoll.addEventListener('click', actionOnDiceRoll);
+btnHold.addEventListener('click', actiOnHold);
 
-// btnNewGame.addEventListener('click', function () {
-//   window.location.reload();
-// });
+btnNewGame.addEventListener('click', function () {
+  window.location.reload();
+});
 
-// const finishGame2 = function () {
-//   document
-//     .querySelector(`.player--${activePlayer}`)
-//     .classList.add('player--winner');
-//   document.querySelector(`#name--${activePlayer}`).textContent = 'Winner 🥳';
-//   document.getElementById(`score--${activePlayer}`).style.color = 'white';
-//   btnDiceRoll.disabled = true;
-//   btnHold.disabled = true;
-// };
+const finishGame2 = function () {
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.add('player--winner');
+  document.querySelector(`#name--${activePlayer}`).textContent = 'Winner 🥳';
+  document.getElementById(`score--${activePlayer}`).style.color = 'white';
+  btnDiceRoll.disabled = true;
+  btnHold.disabled = true;
+};
 
-// btnDiceRoll.addEventListener('click', actionOnDiceRoll);
-// btnHold.addEventListener('click', actiOnHold);
+btnDiceRoll.addEventListener('click', actionOnDiceRoll);
+btnHold.addEventListener('click', actiOnHold);
 
-// btnNewGame.addEventListener('click', function () {
-//   window.location.reload();
-// });
+btnNewGame.addEventListener('click', function () {
+  window.location.reload();
+});
